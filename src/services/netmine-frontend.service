@@ -1,0 +1,13 @@
+[Unit]
+Description=NetMine Frontend
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%PROJECT_DIR%/frontend
+ExecStart=%PROJECT_DIR%/frontend/start.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

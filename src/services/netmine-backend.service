@@ -1,0 +1,13 @@
+[Unit]
+Description=NetMine Backend
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%PROJECT_DIR%/backend
+ExecStart=%PROJECT_DIR%/backend/start.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
